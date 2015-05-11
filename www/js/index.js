@@ -20,7 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         //this.bindEvents();
-        var myArray = ['Yes', 'No', 'Maybe'];
+        var myArray = ['Yes', 'No', 'Maybe', '24'];
         var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
         var button =  document.getElementById("button");
