@@ -22,6 +22,13 @@ var app = {
         //this.bindEvents();
         var myArray = ['Yes', 'No', 'Maybe'];
         var rand = myArray[Math.floor(Math.random() * myArray.length)];
+
+        var button =  document.getElementById("button");
+
+        button.onclick = function() {
+            button.innerHTML = rand;
+            rand = myArray[Math.floor(Math.random() * myArray.length)];
+        };
     }
     // Bind Event Listeners
     //
