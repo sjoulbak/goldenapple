@@ -19,8 +19,10 @@
 var app = {
     // Application Constructor
     initialize: function() {
-        this.bindEvents();
-    },
+        //this.bindEvents();
+        var myArray = ['Yes', 'No', 'Maybe'];
+        var rand = myArray[Math.floor(Math.random() * myArray.length)];
+    }
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
