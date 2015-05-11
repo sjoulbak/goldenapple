@@ -23,11 +23,18 @@ var app = {
         var myArray = ['Yes', 'No', 'Maybe', '42'];
         var rand = myArray[Math.floor(Math.random() * myArray.length)];
 
+        function getRand() {
+            oldRand = rand
+            while (oldRand == rand) {
+                rand = myArray[Math.floor(Math.random() * myArray.length)];
+            };
+        };
+
         var button =  document.getElementById("button");
 
         button.onclick = function() {
             button.innerHTML = rand;
-            rand = myArray[Math.floor(Math.random() * myArray.length)];
+            getRand();
         };
     }
     // Bind Event Listeners
