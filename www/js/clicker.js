@@ -1,1 +1,3 @@
-// Hoi
+$("#button").click(function() {
+    alert("HueHueHue");
+});
